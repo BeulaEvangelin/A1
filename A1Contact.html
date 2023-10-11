@@ -18,33 +18,34 @@
             </nav>
         </div>
     </header>
-    <div>
+    <section>
         <h1>Contact</h1>
-        <form action="action_page.php">
-      
-          <label>Name (required)</label>
-          <input type="text" id="name" name="firstname" placeholder="Your name..">
-      
-          <label>Email (required and validated as email)</label>
-          <input type="email" id="email" name="lastname" placeholder="Your email..">
+        <form name="contactPage" action="process-contact.php" method="POST">
+            <fieldset>
+            <legend> Your Info</legend>
+            <label for="name">Name (required):</label>
+            <input type="text" name="name" required>
+            
+            <label for="email">Email (required and validated as email):</label>
+            <input type="email" name="email" required><br>
+            
+            <label for="categoryInterests">Category interests:</label>
+            <input type="checkbox" name="categoryInterests" value="1"> Industry
+            <input type="checkbox" name="categoryInterests" value="2"> Technical
+            <input type="checkbox" name="categoryInterests" value="3"> Career <br>
+            
+            <label for="role">Your role:</label>
+            <select name="role">
+                <option value="op1">Writer</option>
+                <option value="op2">Contributor</option>
+                <option value="op3">Administrator</option>
+            </select><br><br>
+            </fieldset>
+            <input type="submit" value="Submit">
 
-          <label>Email (required and validated as email)</label>
-          <input type="checkboxes" id="email" name="lastname" placeholder="Your email..">
-      
-          <label for="interests">Interest</label>
-          <select type="checkboxes" id="country" name="country">
-            <label for="australia">Industry</option>
-            <label for="canada">Technical</option>
-            <label for="usa">Career</option>
-          </select>
-      
-          <label for="subject">Subject</label>
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:15px"></textarea>
-      
-          <input type="submit" value="Submit">
-      
         </form>
-      </div>
+    </section>
+
       <footer>
         <h2>We use Cookies</h2>
         <p>We use cookies to make your experience better on this website <a href = "#">Accept Cookies</a></p>
