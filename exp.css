@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@media screen and (max-width: 480px) {
+    header, footer {
+        display: none; 
+    }
+
+    p {
+        line-height: 1.5; 
+        font-size: 18px; 
+    }
+
+    .box {
+        width: 200px;
+        height: 100px;
+        margin: 20px;
+        padding: 10px;
+        border: 2px solid #ccc;
+    }
+    .logoSize {
+        width: 1%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+header {
+    position: fixed; /*As the name implies, fixed-positioned elements do not scroll with the rest of a document.*/
+    width: 100%;
+    background-color: white; /* White background for header and footer */
+    z-index: 1;
+}
+
+footer {
+    position: absolute; /*it fucking scrolls fix itttttt*/
+    width: 100%;
+    background-color: white; /* White background for header and footer */
+    z-index: 2;
+}
+
+.logoSize {
+    width: 4%;
+}
+
+body,p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    background-image: url(../images\bgImg.jpg); /*not working FIX IT*/
+    background-size: cover; /* Background image covering the entire viewport????howwww */
+    background-color: grey;
+    color: black; 
+}
+main {
+    padding-top: 120px;
+}
+
+
+h1, h2, h3, h4 {
+    margin-left: 30px;
+}
+
+h1 {
+    font-size: 1.5em ; /* 1.5 times the body font size. How am I supposed to know? */
+}
+
+h2 {
+    font-size: 1.5em ; /* 1.5 times the body font size */
+}
+
+h3 {
+    font-size: 1.5em; /* 1.5 times the body font size */
+}
+
+article {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.featured {
+    font-size: 18px; /* Greater font size for featured articles than other articles. */
+    width: 80%;
+}
+
+.catogories {
+	display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr;
+    grid-template-rows: 1fr, 1fr, 1fr;
+    column-gap: 10px; 
+    row-gap: 15px;
+	grid-template-areas: "one two three" 
+		"four five six" 
+		"seven eight nine"; 
+}
+.one{
+	grid-area: one;
+}
+.two{
+	grid-area: two;
+}
+.three{
+	grid-area: three;
+}
+.four{
+	grid-area: four;
+}
+.five{
+	grid-area: five;
+}
+.six{
+	grid-area: six;
+}
+.seven{
+	grid-area: seven;
+}
+.eight{
+	grid-area: eight;
+}
+.nine{
+	grid-area: nine;
+}
+
+.technicalAuthor {
+    background-color: black;
+    color: white;
+}
+
+.careerAuthor {
+    background-color: purple;
+    color: white;
+}
+
+.requiredRed {
+    border: 1px solid red;
+}
+}
