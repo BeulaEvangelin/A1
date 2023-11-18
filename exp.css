@@ -20,17 +20,26 @@
     .logoSize {
         width: 1%;
     }
-}
+}*/
 
-@media (481px <= width <= 1200px) {*/
+@media (481px <= width <= 1200px) {
 
 header {
     position: fixed; /*As the name implies, fixed-positioned elements do not scroll with the rest of a document.*/
     width: 100%;
     background-color: white; /* White background for header and footer */
     z-index: 1;
+    
 }
-
+.navUL{
+	display: flex;
+	flex-direction:row;
+	justify-content: start;
+	align-items:bottom;
+	align-content:end;
+	row-gap:20px;
+	column-gap:10px;
+}
 footer {
     position: fixed; 
     bottom:0;
@@ -61,21 +70,9 @@ main {
     padding-top: 120px;
 }
 
-
 h1, h2, h3, h4 {
     margin-left: 30px;
-}
-
-h1 {
-    font-size: 1.5rem ; 
-}
-
-h2 {
-    font-size: 1.5rem ; 
-}
-
-h3 {
-    font-size: 1.5rem; 
+    font-size: 1.5rem ;
 }
 
 article {
@@ -89,42 +86,22 @@ article {
     width: 80%;
 }
 
-.catogories {
-	display: grid;
-    grid-template-columns: 1fr, 1fr, 1fr;
-    grid-template-rows: 1fr, 1fr, 1fr;
-    column-gap: 10px; 
-    row-gap: 15px;
-	grid-template-areas: "one two three" 
-		"four five six" 
-		"seven eight nine"; 
+.ArticleHeading{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
-.one{
-	grid-area: one;
-}
-.two{
-	grid-area: two;
-}
-.three{
-	grid-area: three;
-}
-.four{
-	grid-area: four;
-}
-.five{
-	grid-area: five;
-}
-.six{
-	grid-area: six;
-}
-.seven{
-	grid-area: seven;
-}
-.eight{
-	grid-area: eight;
-}
-.nine{
-	grid-area: nine;
+
+ul{
+    list-style: none;
+	display: flex;
+	flex-direction:row;
+	justify-content: start;
+	align-items: top;
+	align-content:end;
+	row-gap:5px;
+	column-gap:20px;
+
 }
 
 .technicalAuthor {
@@ -140,4 +117,4 @@ article {
 input[required] {
     border: 2px solid red;
 }
-
+}
