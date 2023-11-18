@@ -3,7 +3,7 @@
  @media (width < 767px) {
 
 header {
-    width: 250px;
+    width: 200px;
     height: 80px;
     margin: 0px;
     padding: 10px;
@@ -167,7 +167,9 @@ footer {
 .logoSize {
     width: 4%;
 }
-
+.artImg{
+    width:100%;
+}
 body,p, ul, li {
     margin: 0;
     padding: 0;
@@ -191,6 +193,7 @@ h1, h2, h3, h4 {
 }
 
 article {
+    width: 450px;
     background-color: #fff;
     padding: 20px;
     margin-bottom: 20px;
