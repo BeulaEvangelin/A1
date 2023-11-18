@@ -1,30 +1,140 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-/* @media  (320px <= width <= 480px) {
-    header, footer {
-        display: none; 
-    }
-
-    p {
-        line-height: 1.5; 
-        font-size: 18px; 
-    }
-
-    .box {
-        width: 200px;
-        height: 100px;
-        margin: 20px;
-        padding: 10px;
-        border: 2px solid black;
-    }
-    .logoSize {
-        width: 1%;
-    }
-}*/
-
-@media (481px <= width <= 1200px) {
+ @media (width < 767px) {
 
 header {
+    width: 200px;
+    height: 80px;
+    margin: 0px;
+    padding: 10px;
+    border: 2px;
+    position: fixed;
+    top:0;
+    left:0;
+    background-color: white; 
+    z-index: 1;
+
+}
+.logoSize {
+    width: 30%;
+}
+.artImg{
+    width:90%;
+}
+.navUL{
+	display: flex;
+	flex-direction:row;
+	justify-content: start;
+	align-items:bottom;
+	align-content:end;
+	row-gap:20px;
+	column-gap:10px;
+}
+footer {
+    width: 200px;
+    height: 100px;
+    margin: 0px;
+    padding: 10px;
+    border: 2px;
+    position: fixed; 
+    bottom:0;
+    left:0;
+    width: 100%;
+    background-color: white;
+    z-index: 2;
+}
+
+body,p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+p {
+    line-height: 1.5; 
+    font-size: 18px; 
+}
+body {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    background-image: url(images/bgImg.jpg); 
+    background-size: cover; 
+    background-color: grey;
+    color: black; 
+}
+main {
+    padding-top: 120px;
+}
+h1, h2, h3, h4 {
+    margin-left: 30px;
+    font-size: 1.5rem ;
+}
+
+article {
+    width: 350px;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.featured {
+    font-size: 18px; /* Greater font size for featured articles than other articles. */
+    width: 80%;
+}
+.ArticleHeading{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+ul{
+    list-style: none;
+	display: flex;
+	flex-direction:column;
+	justify-content: center;
+	align-items: top;
+	align-content:end;
+	
+}
+
+.technicalAuthor {
+    background-color: black;
+    color: white;
+}
+
+.careerAuthor {
+    background-color: purple;
+    color: white;
+}
+
+input[required] {
+    border: 2px solid red;
+}
+
+.box {
+    width: 200px;
+    height: 100px;
+    margin: 20px;
+    padding: 10px;
+    border: 2px
+}
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) { 
+
+header {
+    width: 200px;
+    height: 80px;
+    margin: 0px;
+    padding: 10px;
+    border: 2px;
     position: fixed; /*As the name implies, fixed-positioned elements do not scroll with the rest of a document.*/
     width: 100%;
     background-color: white; /* White background for header and footer */
@@ -41,6 +151,11 @@ header {
 	column-gap:10px;
 }
 footer {
+    width: 200px;
+    height: 80px;
+    margin: 0px;
+    padding: 10px;
+    border: 2px;
     position: fixed; 
     bottom:0;
     left:0;
@@ -89,7 +204,7 @@ article {
 .ArticleHeading{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 ul{
